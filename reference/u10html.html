@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U10 Profile</title>
+    <link rel="stylesheet" href="../views/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="pacman">
+                <div class="pacman-circle">
+                    <div class="pacman-eye"></div>
+                </div>
+                <div class="pacman-mouth"></div>
+            </div>
+
+            <div class="name u">
+                <p>F</p>
+            </div>
+            <div class="name one">
+                <p>L</p>
+            </div>
+            <div class="name zero">
+                <p>A</p>
+            </div>
+            <div class="name u">
+                <p>S</p>
+            </div>
+            <div class="name one">
+                <p>H</p>
+            </div>
+            <div class="name zero">
+                <p>C</p>
+            </div>
+            <div class="name u">
+                <p>A</p>
+            </div>
+            <div class="name one">
+                <p>R</p>
+            </div>
+            <div class="name zero">
+                <p>D</p>
+            </div>
+            <div class="name u">
+                <p>S</p>
+            </div>
+        </div>
+        <div class="login-block">
+            <div class="login-block__login login-item">Log in</div>
+            <form action="/login">
+            <input type="text" name="login">
+            </form>
+            <div class="login-block__logout login-item">Log out</div>
+            <div class="login-block__logout login-item"><a href="/">Home</a></div>
+        </div>
+    </header>
+    <main class="container" id="first">
+        <!-- <h3 class="deck-title">{{this.deck}}</h3>
+        <div class="text">
+            <p>{{this.question}}</p>
+        </div>
+        <div class="buttons-group">
+            <button class="scroll" type="submit" data-yes>Yes</button>
+            <button class="scroll" type="submit" data-no>No</button>
+        </div>-->
+
+        <h2 class="game-title">Flashcards decks</h2> 
+       <!-- <h3 class="deck-title">{{this.deck}}</h3>
+        <div class="text">
+            <p>You've completed a round of {{this.deck}}. You answered {{score}}/??? cards correctly on the first try. You submitted {{}} total guesses before each card was answered correctly</p>
+        </div> -->
+        <div class="decks-block" data-alldecks>
+            <div class="deck-item scroll" >Animals</div>
+            <div class="deck-item scroll">History</div>
+            <div class="deck-item scroll">Geography</div>
+            <div class="deck-item scroll">Other</div>
+        </div>
+    </main>
+    <footer>
+        <div class= "next-btn btn-hover" id="next">
+            <p><a href="#second">Next</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

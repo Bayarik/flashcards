@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flash</title>
+        <script defer src="/js/script.js"></script>
+        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            {{>logo}}
+            <div class="login-block">
+                <div class="login-block__login login-item">{{user.name}}</div>
+                <div class="login-block__logout login-item">Log out</div>
+                <div class="login-block__logout login-item"> <a href="/">Home</a> </div>
+            </div>
+        </header>
+        <main class="container">
+
+            {{{body}}}
+        </main>
+    </body>
+
+</html>

@@ -1,0 +1,8 @@
+{{>gametitle}}
+    <div class="decks-block">
+        {{#each allDecks}}
+        <div class="deck-item scroll" data-type='deck' data-deckid={{this.id}}>
+            {{this.title}}
+        </div>
+        {{/each}}
+    </div>

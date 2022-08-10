@@ -1,0 +1,226 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #fabc5e;
+    font-family: 'VT323', monospace;
+    font-size: 28px;
+}
+
+header {
+    min-height: 20rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login-block {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.login-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.login-item:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #6771ff;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+.login-item:hover:after,
+.login-item:focus:after {
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.logo {
+    top: 20px;
+    left: 20px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+
+
+.text {
+    min-width: 50%;
+    height: 70%;
+    padding: 25px;
+    background-color: white;
+    border: 10px solid #000000;
+    filter: drop-shadow(20px 20px 4px rgba(0, 0, 0, 0.25));
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+}
+
+.buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.buttons-group button {
+    font-size: 20px;
+}
+
+.scroll,
+.next-btn {
+    padding: 1em 2em;
+    background-color: #6c6aff;
+    border-radius: 10px;
+    bottom: 10%;
+    filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.25));
+    transition: transform 250ms;
+}
+
+.scroll:hover {
+    transform: translateY(-10px);
+}
+
+
+.scroll p {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* logo */
+
+h2.game-title {
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+}
+
+.decks-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.deck-item {
+    min-width: 8rem;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Pacman */
+
+.pacman {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 250ms;
+}
+
+.pacman:hover {
+    transform: translateY(-10px);
+}
+
+.pacman-circle {
+    width: 150px;
+    height: 150px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pacman-mouth {
+    position: absolute;
+    top: 10%;
+    right: -65%;
+    transform: rotate(45deg);
+    width: 120px;
+    height: 120px;
+    background-color: #fabc5e;
+}
+
+.pacman-eye {
+    width: 20px;
+    height: 20px;
+    background-color: #fabc5e;
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    top: 20px;
+}
+
+/* U10 */
+
+.name {
+    width: 3rem;
+    height: 3rem;
+    background-color: #6771ff;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    font-size: 48px;
+    transition: transform 250ms;
+}
+
+.name:hover {
+    transform: translateY(-10px);
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+}
+
+.next-btn {
+    max-width: 2rem;
+    margin: 0 2rem 0 auto;
+
+}
+
+.next-btn:hover {
+    background-color: #dfd49c;
+    transition: 0.3s;
+}
+
+img {
+    width: 40vw;
+}
