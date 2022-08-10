@@ -1,7 +1,7 @@
 ## Flashcards
 # How to launch
-![asd](readme-assets/1.png)
-![asd](readme-assets/2.png)
+![asd](mockups/1.png)
+![asd](mockups/2.png)
 1. Clone project
 2. Install all dependencies in client/server with npm i
 3. Creeate .env file in server folder
